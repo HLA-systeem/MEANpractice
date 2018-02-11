@@ -1,0 +1,19 @@
+<div (click)="toggleDetail($event)">
+    <p>
+    <span><b>{{character.name}}</b></span>
+    <img class="arrow" src="assets/arrowDown.png">
+    </p>
+    <hr>
+</div>
+
+<div *ngIf="!editCharacter && detail" class="detail">
+    <p><b>Species</b>: {{character.species}}</p>
+    <p><b>Capable Of</b>: {{character.capable_of}}</p>
+    <p><b>Residence</b>: {{character.residence}}</p>
+    <p><b>Hair Color</b>: {{character.hair_color}}</p>
+    <p><b>Eye Color</b>: {{character.eye_color}}</p>
+    <button (click)="showEdit($event)"><b>EDIT</b></button>
+    <button (click)="delete($event)"><b>DELETE</b></button>
+</div>
+
+<app-editCharacterForm *ngIf="editCharacter" [character]="character"></app-editCharacterForm>

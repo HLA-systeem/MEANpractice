@@ -1,0 +1,23 @@
+.arrow{
+    transform: rotate(-90deg);
+    opacity: 0.5;
+    float: right;
+}
+
+.arrowDown{
+    transform: rotate(0deg);
+    transition: transform 300ms ease-in-out
+}
+
+
+.detailHidden{
+    margin-left: 4%;
+    opacity: 0;
+    display: none;
+}
+
+.detailOpen{
+    display: block;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}

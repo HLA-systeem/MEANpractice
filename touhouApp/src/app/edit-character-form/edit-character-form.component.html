@@ -1,0 +1,29 @@
+<form class="editDetail">
+    <p class="form-group">
+        <label for="nameInput">Name:</label>
+        <input id="nameInput" type="text" class="form-control col-xs-12" [(ngModel)]="character.name" name="name">
+      </p>
+      <p class="form-group">
+          <label for="speciesInput">Species:</label>
+          <input id="speciesInput" type="text" class="form-control" [(ngModel)]="character.species" name="species">
+      </p>
+      <p class="form-group">
+        <label for="capableOfInput">Capable Of:</label>
+        <input id="capableOfInput" type="text" class="form-control" [(ngModel)]="character.capable_of" name="capableOf">
+      </p>
+      <p class="form-group">
+        <label for="residence">Residence:</label>
+        <input id="residence" type="text" class="form-control" [(ngModel)]="character.residence" name="residence">
+      </p>
+      <p class="form-group">
+        <label for="hair_color">Hair Color:</label>
+        <input id="hair_color" type="text" class="form-control" [(ngModel)]="character.hair_color" name="hair_color">
+      </p>
+      <p class="form-group">
+        <label for="eye_color">Eye Color:</label>
+        <input id="eye_color" type="text" class="form-control" [(ngModel)]="character.eye_color" name="eye_color">
+      </p>
+    <button (click)="changeCharacter()"><b>Submit Changes</b></button>
+  </form>
+  
+  
